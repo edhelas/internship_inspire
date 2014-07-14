@@ -132,8 +132,11 @@
 	
 	%L'objectif de ces quatre mois de stage a été de maitriser les différentes méthodes de travail de l'équipe ainsi que les technologies web utilisées pour le développement de leurs projets.
 
-    %Ce présent rapport détaillera ces différentes tâches et sera accompagné d'un retour personnel pour chacune.
+  Inspire est une entreprise se spécialisant dans le développement de sites web en utilisant le framework Ruby On Rails. Elle est localisée à Utrecht aux Pays-Bas.
+  
+  L'objectif de ces six mois de stage a été de conforter les connaissances acquises l'été dernier concernant ce framework ainsi que les différentes technologies liées à l'environnement Web tel que Javascript, CSS ou HTML.
 
+    Ce présent rapport détaillera ces différentes tâches et sera accompagné d'un retour personnel pour chacune.  
 \vspace*{\stretch{1}}
 
 \newpage
@@ -188,7 +191,7 @@ J'ai rejoint l'équipe peu avant le recrutement du nouveau manager de projets.
 
 \chapter{Notions préalables}
 
-Dans ce chapitre je détaillerai un ensemble d'éléments techniques nécessaires à la bonne compréhension du reste du rapport.
+Dans ce chapitre je détaillerai un ensemble d'éléments techniques nécessaires à la bonne compréhension du reste du rapport. Je présenterai également les méthodes de développement et techniques utilisées au sein de l'agence pour leurs projets.
 
 \section{Ruby on Rails}
 
@@ -373,6 +376,13 @@ Il est ici intéressant de voir la méthodologie que l'équipe a appliqué, grâ
 
 En effet, chaque étape ou module sera considéré comme une branche de travail issue de la branche principale (appelée \texttt{master} ou \texttt{trunk}). Lorsqu'un développeur souhaite implémenter une nouvelle fonctionnalité ou réécrire un partie du code source, celui-ci va créer une nouvelle branche (il va ``forker''), effectuer ses modifications puis faire une proposition au reste de l'équipe, cette offre est appelée ``pull request'' (car l'idée est de ``tirer'' les modifications dans la branche d'origine).
 
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.50]{img/branches.png}
+ \caption{Aperçu du gestionnaire de branches de GitHub pour le projet Calibris}
+ \label{fig.jira_agile1}
+\end{figure}
+
 Chacune des branches devra par la suite être revue par un collaborateur n'ayant pas participé à la rédaction du code source la contenant, cela permet d'avoir un œil externe sur le code rédigé permetant ainsi de détecter des optimisations, des erreurs ou de simples fautes d'innatentions.
 
 Chaque branche devra également comporter son lot de nouveaux tests (RSpec et Cucumber) afin de couvrir le code nouvellement rédigé (certains outils tel que CodeClimate\footnote{\url{https://codeclimate.com/}} analysent et génèrent automatiquement des rapports précisant la couverture du code source des projets et les points à améliorer).
@@ -435,8 +445,6 @@ Les membres de l'équipe organisent leur travail en suivant scrupuleusement cert
 
 Lors de la définition de mon sujet j'ai essentiellement souhaité travailler sur les technologies dites ``frontend'' (donc étant en grande partie coté navigateur) tel que Javascript, CSS ou encore DOM. Le projet Calibris m'a donc été confié car les tâches qui étaient à effectuer sur celui-ci étaient essentiellement tournées vers cet aspect.
 
-[AJOUTER POST DE BLOG]
-
 \section{Projets}
 
 Le travail que j'ai effectué sur peut aisément se subdiviser en plusieurs thème. Tout d'abord le projet Calibris, que je détaillerai en première partie. J'ai également rédigé un article concernant la technologie Websocket sur le blog officiel de Inspire.
@@ -444,6 +452,13 @@ Le travail que j'ai effectué sur peut aisément se subdiviser en plusieurs thè
 \subsection{Calibris}
 
 Le projet Calibris a occupé la majeure partie des six mois de travail effectués à Inspire. Initialement prévu comme un premier projet sur lequel me pencher au début de mon stage, j'ai finalement eu la possibilité de continuer à travailler dessus suite à l'ajout de nouveaux objectifs au fur et à mesure de l'accomplissement des tâches précédentes.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.60]{img/calibris.jpg}
+ \caption{Calibris, l'un des clients de Inspire}
+ \label{fig.jira_agile1}
+\end{figure}
 
 Je pourrais donc diviser l'ensemble du travail en trois grandes sections, le gestionnaire de création de questionnaires, la mise à jour vers Rails 4 et le portage d'une partie de l'interface sur mobile.
 
@@ -462,7 +477,7 @@ Cet ensemble de fonctionnalités étant liées au gestionnaire de questionnaire 
 
 \subsubsection{Passage à Rails 4}
 
-Le projet Calibris est une application ayant été écrite sur la version trois du framework Ruby On Rails. La seconde tâche majeure que j'aurais à effectuer sur celui-ci consistera à migrer l'ensemble du code-source vers la version quatre. Cette volonté de migrer les projets vers les versions récentes du framework fait partie de la politique globale de l'agence Inspire afin d'éviter à avoir à maintenir un ensemble hétéroclite de versions (du framework mais aussi des modules, ou ``gems'').
+Le projet Calibris est une application ayant été écrite sur la version trois du framework Ruby On Rails. La seconde tâche majeure que j'aurais à effectuer sur celui-ci consistera à migrer l'ensemble du code-source vers la version quatre. Cette volonté de migrer les projets vers les versions récentes du framework fait partie de la politique globale de l'agence Inspire afin d'éviter à avoir à maintenir un ensemble hétéroclite de versions (du framework mais aussi des modules, ou Gems).
 
 Une autre raison est venue pousser au portage de Calibris sur RoR 4. La tâche suivant consiste à adapter une partie de l'application (en l'occurence toute l'interface servant à répondre aux questionnaires) afin de la rendre compatible pour une consultation des les appareils mobiles. La version quatre du framework intègre de nombreux outils facilitant grandement la tâche au développeur pour le portage d'un application sur ces appareils nomades (dont entre autre un astucieux algorytme permettant de détecter efficacement le type d'appareil et de rediriger l'utilisateur vers une vue adapté à son appareil).
 
@@ -490,11 +505,13 @@ Initialement prévue sur deux semaines l'adaptation du code existant a finalemen
 
 \subsection{Rédaction d'un article sur la technologie Websocket}
 
-Suite à la réalisation de l'ensemble des tâches m'ayant été assignés sur Calibris j'ai décidé de participer à la rédaction d'un article sur le blog de l'agence. Le technologie Websocket me tenant particulièrement à cœur je l'ai alors proposé aux membres de l'agence afin d'avoir leurs approbation avant de commencer la rédaction.
+Suite à la réalisation de l'ensemble des tâches m'ayant été assignés sur Calibris j'ai décidé de participer à la rédaction d'un article sur le blog de l'agence. La technologie Websocket me tenant particulièrement à cœur je l'ai alors proposé aux membres de l'agence afin d'avoir leurs approbation avant de commencer la rédaction.
 
 N'ayant pas particulièrement de connaissances sur le domaine plusieurs jours de veilles et d'expérimentations ont été nécessaires avant de commencer la rédaction de l'article.
 
-L'article est aujourd'hui disponible à cette adresse : \url{http://www.inspire.nl/blog/websockets-let-s-talk-about-real-time/}. Je ne détaillerai pas les spécificités techniques des Websockets, l'article étant déjà assez compet à ce sujet.
+L'article est aujourd'hui disponible à cette adresse : \url{http://www.inspire.nl/blog/websockets-let-s-talk-about-real-time/}. Je ne détaillerai pas les spécificités techniques des Websockets, l'article étant déjà assez complet à ce sujet.
+
+La veille, la rédaction, la correction et la publication de l'article m'a occupé un peu plus d'une semaine. Plusieurs jours supplémentaires ont été nécessaires pour expérimenter et mettre en place deux tutoriels (l'un en Javascript, l'autre en Rails) que j'ai intégré au sein de l'article. J'ai également ajouté 4 schémas à la publication finale pour en faciliter la lecture.
 
 \chapter{Projets}
 
@@ -859,6 +876,16 @@ has_many :questions, -> { order('questions.lft') }
     
 Finalement, le code étant assez récent les autres corrections n'ont été que mineures.
 
+\subsection{Exécution des tests}
+
+L'exécution des tests (Cucumber et R-Spec) ont permis de détecter des régressions apparues suite à la mise à jour des Gem et du framework Rails.
+
+C'est ici que nous pouvons pleinement apprécier les avantages apportés par la couverture de code grâce aux tests. En travaillant avec cette sécurité nous pouvons être sur de ne perdre aucune fonctionnalité lors de migrations importantes tel que la mise à jour vers une nouvelle version majeure du framework sous-jacent.
+
+\subsection*{Conclusion}
+
+La mise à jour d'une application Rails est toujours une étape délicate. La stabilisation du code source nous a ici pris un peu plus d'une semaine. Après vérification, la branche \texttt{master\_update} a été fusionnée avec la branche \texttt{master} quelques jours après et l'ensemble du projet tourne désormais sur cette nouvelle version.
+
 \section{Calibris - Adaptation pour la version mobile}
 
 \subsection{Travail à effectuer}
@@ -948,7 +975,22 @@ Pour le cas de Calibris ce sont essentiellement les deux premiers facteurs qui o
 
 Un élément intéressant à mentionner concerne la taille et la résolution des images. Ces deux facteurs ayant un impact important lors du rendu sur des terminaux différents.
 
-Avec l'arrivée des écrans dits ``à haute définition'' sur les mobiles nous chamboulons totalement les sensités d'affichage des textes et images au sein des pages web. L'unité CSS ``pixel'' ne se calquant plus du tout sur l'affiche réel d'un pixel à l'écran. Il donc préférable d'utiliser des unités plus réalistes tel que le \texttt{em} qui est définit à partir de la taille des caractères de l'élément courant.
+Avec l'arrivée des écrans dits ``à haute définition'' sur les mobiles nous chamboulons totalement les densités d'affichage des textes et images au sein des pages web. L'unité CSS ``pixel'' ne se calquant plus du tout sur l'affiche réel d'un pixel à l'écran. Il est donc préférable d'utiliser des unités plus réalistes tel que le \texttt{em} qui est définit à partir de la taille des caractères de l'élément courant.
+
+La figure suivante illustre parfaitement les soucis que nous pouvons avoir avec le rendu des images sur les écrans haute résolution. 
+
+\begin{itemize}
+  \item La première illustre l'affichage d'un icone de 8 par 8 pixels sur un écran basse résolution. Il est ici parfaitement affiché, les pixels de l'image d'alignant parfaitement sur ceux de l'écran.
+  \item Sur la seconde image nus tentons d'afficher le même icone sur un écran haute résolution, nous voyons que les pixels agrandis de l'image d'origine chevauchent ceux de l'écran. Le navigateur va alors tenter d'interpoler ceux-ci créant un effet de flou lors du rendu.
+  \item Sur la dernière image, nous chargeons la version vectorielle de l'icone, le navigateur va alors générer une image ayant la résolution native de l'écran.
+\end{itemize}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.9]{img/reso1.png}
+ \caption{Rendu d'une forme selon les trois principes énoncés}
+ \label{fig.jira_agile1}
+\end{figure}
 
 Pour les images, nous rencontrons le même soucis. Contrairement aux textes, les images ont toujours tendances à s'afficher en suivant la résolution réelle de l'écran (un pixel de l'image équivalent à un pixel réel). Pourtant il arrive bien souvent aux développeurs de fixer leurs tailles afin de s'assurer de leurs bon placement dans la page. Lors du passage sur mobile, la résolution étant beaucoup plus dense, leurs rendu s'en trouve chamboulé (une icone de 16 pixels sera affiché sur une largeur de 50 pixels réels par exemple) générant un flou désagréable lors du rendu de la page.
 
@@ -958,7 +1000,35 @@ Ici deux solutions peuvent être envisagées :
   \item Via l'utilisation d'icônes et graphiques générés en vectoriels. Le navigateur s'occupera alors du rendu lui même en respectant la résolution actuelle de la page.
 \end{itemize}
 
-Pour certains éléments graphiques de Calibris j'ai préféré passer par ce second choix.
+Pour certains éléments graphiques de Calibris (tel que le logo du menu) j'ai préféré passer par ce second choix.
+
+\subsection*{Conclusion}
+
+L'interface de Calibris étant plutôt simple à manier, le passage en vue mobile n'a pas été d'une grande difficulté. Une seule semaine a été nécessaire pour développer, corriger et s'assurer du bon rendu de l'interface mobile sur les navigateurs des différents systèmes d'exploitation embarqués (iOS, Android).
+
+\chapter{Retour d'expérience}
+
+Ce second stage aux Pays-Bas a été l'occasion pour moi de conforter mes connaissances dans les différentes technologies Web mais aussi dans le domaine organisationnel ou sur le plan relationnel.
+
+Ce chapitre sera l'occasion de revenir sur ces six mois. Je donnerai tout d'abords mon avis sur le plan technique puis, d'une façon plus générale, sur mon intégration au sein de l'équipe.
+
+\section{Technique}
+
+Toujours dans un désir de repousser mes domaines de connaissances ces six mois de stage m'ont permis d'approfondir sérieusement ma compréhension du framework Ruby On Rails et des outils gravitant autour.
+
+L'idée ici n'était pas d'acquérir uniquement les compétences nécessaires pour faire de moi un développeur Rails mais également de comprendre les différentes structures de code et méthodes de développement utilisées au travers de ce framework. De ce fait j'ai pus intégrer de nombreux concepts tel que l'utilisation des vues partielles\footnote{\url{http://guides.rubyonrails.org/layouts_and_rendering.html}}, technique pouvant être réutilisée dans de nombreux autres projets (ce qui est le cas sur des frameworks PHP tel que Symfony\footnote{\url{http://symfony.com/legacy/doc/gentle-introduction/1_4/en/07-Inside-the-View-Layer}} ou Zend\footnote{\url{http://devzone.zend.com/1235/view-helpers-in-zend-framework/}}) ou plus simplement la structure de fichiers proposée par Rails, devenue de fait une organisation standard sur les grands frameworks Web.
+
+Pour le moment je ne souhaite pas concentrer l'ensemble de mes connaissances afin de devenir expert sur une technologie particulière. Le monde du développement Web est très large et complet et touche aussi bien la mise en page et l'interface utilisateur-machine que de l'optimisation de traitement de données coté serveur.
+
+L'intérêt que je porte pour cette diversité est bien plus important que le désir de devenir expert dans l'une d'entre elles. De plus, je souhaiterai garder un relative flexibilité sur les choix de conception que je pourrais faire par la suite en ayant eu la chance de mettre en place des architectures complètes, tout en ayant compris leurs fonctionnement.
+
+Cela est d'autant plus vrais que dans le domaine de l'informatique, et plus spécialement du Web, il est très facile de s'instruire sur une nouvelle technologie, bibliothèque logicielle ou méthodologie. Les tutoriels et documentations étant facilement accessibles.
+
+\subsection{Sujet du stage}
+
+Le sujet du stage consistait à approfondir mes connaissances sur les technologies front-end (concernant l'interface utilisateur) liées au framework Ruby On Rails. En effet n'ayant pas spécialement fait de développement de ce coté jusqu'alors je souhaitai profiter de cette opportunité pour parfaire mes connaissances dans ces domaines.
+
+\section{L'Équipe}
 
 \listoffigures
 
