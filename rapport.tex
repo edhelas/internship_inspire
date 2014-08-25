@@ -159,13 +159,14 @@ Enfin, je remercie également M. Nicolas Normand, professeur à Polytech Nantes 
 
 L'entreprise Inspire, localisée à Utrecht, se spécialise depuis 2011 dans la conception d'applications web sur la technologie Ruby On Rails. Dans ce chapitre nous détaillerons l'historique de l'entreprise afin de mieux comprendre son status actuel.
 
-\section{2011 - Création de Inspire}
+\section{Historique}
+\subsection{2011 - Création de Inspire}
 
 Mr Vlasveld Floris fonda Inspire fin 2011 afin d'avoir une structure légale pour le lancement d'un projet avec The Dutch Cancer Society\footnote{\url{http://www.kwf.nl/}} suite à un appel d'offres. Ce projet devant se dérouler sur un mois il recrute alors deux freelancers afin de travailler sur l'élaboration de la plateforme sur le framework Ruby On Rails.
 
 Plusieures technologies ont été envisagées jusqu'alors mais c'est Rails qui a finalement été retenu. Ce choix constituera une orientation décisive dans la technologie mère que Inspire souhaite utiliser au sein de son équipe au fil des années.
 
-\section{2012 - Elsevier, développement}
+\subsection{2012 - Elsevier, développement}
 
 Début 2012, Inpire commence à travailler sur un second projet. Le but est alors de développer un puissant outil de visualisation de statistiques de publications pour l'éditeur Elsevier\footnote{\url{http://www.elsevier.com/}}, numéro un mondial dans la publication de revues scientifiques (comprenant pas moins de 1800 références dans son catalogues).
 
@@ -177,7 +178,7 @@ Suite à cette demande Mr Vlasveld décide de recruter plusieurs freelancers cou
 
 En mai l'équipe commence à travailler sur le projet remporté fin 2011 avec KWF, au sein de leurs locaux. Cette importante application occupera l'équipe jusqu'à la fin de l'année et monopolisera jusqu'à 9 développeurs en freelance.
 
-\section{2013 \& 2014 - Équipe et locaux}
+\subsection{2013 \& 2014 - Équipe et locaux}
 
 L'année 2013 marquera le début de l'indépendance de Inspire vis à vis de KWF, le projet alors développé continuera d'être géré en interne par un nouveau Scrum Master (Mr Vlasveld occupant jusqu'alors cette position).
 
@@ -188,6 +189,70 @@ Au début de l'année 2014 l'équipe eménage dans de nouveaux locaux dans le no
 De nombreux projets sont alors acceptés et l'équipe se stabilise sur sa structure (cinq membres dont deux développeurs ``frontend'' et deux développeurs ``backend''). Courant février 2014 un manager de projets est recrutée pour épauler Mr Vlasveld et ainsi lui permettre se se concentrer sur ses tâches principales : la relation client et la gestion générale de l'agence.
 
 J'ai rejoint l'équipe peu avant le recrutement du nouveau manager de projets.
+
+\section{L'Équipe}
+
+L'équipe de Inspire est particulièrement resserée et est composée de quatres développeurs et de deux managers. Le fait de concentrer les technologies exploitées au sein d'Inspire autour du framework Ruby on Rails permet aux développeurs de monter en compétences sur certains points particuliers de cet environnement plutôt que sur de multiples outils et frameworks.
+
+Quelques autres personnes, travailleurs indépendants, sont également liés à l'équipe et participent ponctuellement sur des projets.
+
+Cette organisation permet à Inspire de travailler avec une équipe dynamique et pouvant s'adapter à toutes les situations. Par exemple, durant des moment difficiles, il n'est pas rare que une ou deux personnes viennent renforcer l'effectif pour fluidifier le travail et sa répartion. 
+
+Il est aussi intéressant de noter que chaque développeur possède des abilités particulières sur certains des aspects du développement des applications web. Certains par exemple ont plutôt tendance à travailler sur l'interface avec l'utilisateur (on parle alors de développeurs ``frontends'') tandis que d'autres apprécient le développement de l'architecture coté serveur (ils sont alors vu comme des développeurs ``backend'').
+
+\subsection{Organigramme}
+
+Vous pouvez retrouvez l'organigrame \cref{fig:1}. Mon poste pouvant être ici placé au même niveau que les autres dévelopeurs.
+
+
+\begin{figure}[h]
+   \centering
+\begin{tikzpicture}
+\begin{scope}[xscale=2,yscale=1.5]
+% description et nommage des noeuds 
+\node (D) at (0,4) [rectangle,draw] {\begin{tabular}{c}\textbf{Directeur}\\Floris Vlasveld\end{tabular}};
+\node (PM) at (2,2.8) [rectangle,draw] {\begin{tabular}{c}\textbf{Project Manager}\\Anne-Lot Rameau\end{tabular}};
+\node (D1) at (-3,1) [rectangle,draw] {\begin{tabular}{c}\textbf{Developer}\\David Boot\end{tabular}};
+\node (D2) at (-1,1) [rectangle,draw] {\begin{tabular}{c}\textbf{Developer}\\Joshua Jansen\end{tabular}};
+\node (D3) at (1,1) [rectangle,draw] {\begin{tabular}{c}\textbf{Developer}\\Martina Šimičić\end{tabular}};
+\node (D4) at (3,1) [rectangle,draw] {\begin{tabular}{c}\textbf{Developer}\\Garm Lucassen\end{tabular}};
+\draw (0,2) -- (D);
+\draw (0,2.8) -- (PM);
+\draw (0,2) -| (D1);
+\draw (0,2) -| (D2);
+\draw (0,2) -| (D3);
+\draw (0,2) -| (D4);
+\end{scope}
+\end{tikzpicture}
+\caption{\label {}Organigramme de l'équipe fixe de Inspire} 
+\label{fig:1}
+\end{figure}
+
+\subsection{Mon rôle dans l'équipe}
+
+Mon intégration s'est faite en plusieurs étapes. J'ai tout d'abord passé quelques semaines à comprendre le fonctionnement de l'équipe et du projet Calibris (voir \cref{sec:calibris}) via la lecture de son code source et la réorganisation de quelques fichiers.
+
+Ayant déjà les bases nécessaires à la bonne compréhension d'un projet Ruby on Rails standard (en grande partie grâce au stange que j'avais déjà fait l'année dernière) la majeure partie des informations que je devais assimiler se portaient sur les algorithmes et spécificités de ce projet (étapes de validation des formulaires, limitations mais aussi structure générale des modèles gérés par l'application).
+
+Durant ce stage j'ai eu la possibilité de m'améliorer sur plusieurs aspects très distincs.
+
+\subsubsection{Organisationel}
+
+D'un point de vue organisationel j'ai eu la possibilité de m'exprimer sur quelques points relatifs aux projets d'Inspire. J'ai par exemple organisé plusieurs réunions avec mes collègues afin de les informer de difficultés actuelles ou futures du projet Calibris pour que nous prenions ensemble une décision pour les corriger.
+
+La structure organisationnelle d'Inspire, s'articulant sur de nombreux aspects sur les méthodes Agiles encourage également une forte cohésion entre les membres de l'équipe avec des échanges quotidients.
+
+J'ai donc pu avoir de très nombreuses occasions de m'exprimer au sein de l'équipe afin de proposer des idées d'amélioration tant sur le plan technique que relationel.
+
+\subsubsection{Technique}
+
+Sur le plan technique j'ai amené certaines connaissances concernant le développement Web grâce aux expériences et problèmes que j'ai pu avoir auparavant sur les nombreux projets que j'ai fais parallèlement à mes études. J'ai notamment apporté de mon aide sur des problèmes relatifs à l'optimisation de l'éxécution du Javascript au sein du navigateur et à son utilisation en liaison avec l'arbre structurel de la page (plus communément appelé arbre DOM\footnote{Le Document Object Model (ou DOM) est un standard du W3C qui décrit une interface indépendante de tout langage de programmation et de toute plate-forme, permettant à des programmes informatiques et à des scripts d'accéder ou de mettre à jour le contenu, la structure ou le style de documents XML et HTML. Le document peut ensuite être traité et les résultats de ces traitements peuvent être réincorporés dans le document tel qu'il sera présenté.. Source \url{http://fr.wikipedia.org/wiki/Document_Object_Model}}).
+
+J'ai également apporté de mon aide aux autres développeurs en leurs offrant une vision extérieure aux problèmes qu'ils avaient, ici encore particulièrement vis à vis des soucis relatifs au Javascript, HTML et CSS. 
+
+\subsubsection{Humain}
+
+Pour le coté humain j'ai également donné de ma personne afin de participer à la bonne vie de l'équipe. Je pense que ce point est sûrement l'un des plus important que j'ai eu à exprimer au sein de mon stage, également grâce à l'utilisation des méthodes Agiles. Je le développerai dans la dernière partie de ce rapport.
 
 \chapter{Notions préalables}
 
@@ -240,6 +305,8 @@ Nous pouvons également remarquer que chaque environnement possède sa propre ba
 
 \subsection{Les tests}
 
+\label{sec.tests}
+
 Tout élément développé au sein de Ruby on Rails peut faire l'objet d'un test afin de vérifier son bon déroulement. Au sein de Inspire deux types de tests sont écrits.
 
 \subsubsection{RSpec}
@@ -275,7 +342,7 @@ describe DiariesController do
   end
 end
 \end{lstlisting}
- \caption{Test unitaire d'un controlleur}
+ \caption{Test unitaire d'un contrôleur}
 \end{figure}
 
 Au sein de ce test nous pouvons apercevoir différentes chôses. Tout d'abord le \textit{gem} RSpec vient avec une syntaxe qui lui est propre. Celle-ci s'articule particulièrement autour des mots clefs \texttt{describe}, \texttt{context} et \texttt{it}. Le mot clef \texttt{it} permettant de décrire un test à proprement parler et doit toujours être contenu dans un \texttt{describe}. Le mot clef \texttt{context} quant-à lui permet de regrouper les tests par catégories afin d'en simplifier l'organisation, la lecture et le débuggage.
@@ -340,7 +407,7 @@ Then(/^I see the Question on the Questionnaire page$/) do
   page.should have_content "Question label"
 end
 \end{lstlisting}
- \caption{Déifinitions des différentes étapes de tests Cucumber}
+ \caption{Définitions des différentes étapes de tests Cucumber}
  \label{fig.cucumber2}
 \end{figure}
 
@@ -364,7 +431,22 @@ Avant d'entre de façon concrète au sein des différents projets dans lesquels 
 
 Les méthodes Agiles sont courrament utilisées à Inspire. La taille des projets amenant l'équipe à travailler par cycles (ou Sprints) de deux semaines. Une réunion appellée ``daily standup'' est également organisée tous les matins afin que chaque membre puisse mettre au courant le reste de l'équipe de ses avancées sur les tâches qui lui sont sont présentement affectées. Cette réunion est également l'occasion de présenter les tâches qui seront traitées pendant la journée.
 
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.40]{img/agile1.jpg}
+ \caption{Aperçu du ``Scrum Board'' permetant à l'équipe d'avoir une vision globale des tâches en cours}
+ \label{fig.agile1}
+\end{figure}
+
 Mais au delà des cycles de développement, c'est l'organisation même des projets qui se sont adaptées à ces méthodes. De ce fait, l'ajout de toute nouvelle fonctionnalité dans un projet est jalonnée par un ensemble d'étapes obligatoires pour le bon déroulement et le respect des méthodes d'intégration continues.
+
+\subsubsection{Particularités relatives à Inspire}
+
+L'utilisation des méthodes Agiles au sein d'Inspire diffère sur certains points par rapport à ce que j'ai vécu lors de mon précédent stage (qui s'est fait autour d'un sujet similaire, au sein d'une équipe travaillant également avec certaines méthodes Agiles).
+
+Tout d'abord, comme précisé précédement, l'équipe d'Inspire travaille au sein de cycles allant de deux à trois semaines. Ce rythme est ici plus en phase avec la taille des projets développés. Les fonctionnalités étant importantes elles nécessitent bien souvent plusieurs développeurs à plein temps pour mener leurs développement à terme. 
+
+Il y a également deux tableaux Scrum, l'un virtuel, l'autre affiché dans le bureau. Le tableau virtuel est géré grâce à Jira (voir \cref{sec.jira}) et permet de gérer les tâches de l'ensemble des projets au jour le jour. L'autre offre une vision plus globale (voir \cref{fig.agile1}) et concerne plus la répartition des tâches globales entre les membres de l'équipe.
 
 \subsection{Git et GitHub}
 
@@ -390,6 +472,8 @@ Chaque branche devra également comporter son lot de nouveaux tests (RSpec et Cu
 Après la revue du code source, la rédaction des nouveaux tests et la validation des tests préexistants le développeur est alors autorisé à fusionner (ou ``merger'') son code source avec le code d'origine. La nouvelle fonctionnalité faisant alors partie intégrante du projet.
 
 \subsection{Jira}
+
+\label{sec.jira}
 
 Essentiellement tourné vers la gestion du code source, GitHub n'offre pas l'ensemble des fonctionnalités nécessaires à la bonne gestion et au bon déroulement des projets.
 
@@ -445,11 +529,9 @@ Les membres de l'équipe organisent leur travail en suivant scrupuleusement cert
 
 Lors de la définition de mon sujet j'ai essentiellement souhaité travailler sur les technologies dites ``frontend'' (donc étant en grande partie coté navigateur) tel que Javascript, CSS ou encore DOM. Le projet Calibris m'a donc été confié car les tâches qui étaient à effectuer sur celui-ci étaient essentiellement tournées vers cet aspect.
 
-\section{Projets}
-
 Le travail que j'ai effectué sur peut aisément se subdiviser en plusieurs thème. Tout d'abord le projet Calibris, que je détaillerai en première partie. J'ai également rédigé un article concernant la technologie Websocket sur le blog officiel de Inspire.
 
-\subsection{Calibris}
+\section{Calibris}
 
 Le projet Calibris a occupé la majeure partie des six mois de travail effectués à Inspire. Initialement prévu comme un premier projet sur lequel me pencher au début de mon stage, j'ai finalement eu la possibilité de continuer à travailler dessus suite à l'ajout de nouveaux objectifs au fur et à mesure de l'accomplissement des tâches précédentes.
 
@@ -462,7 +544,7 @@ Le projet Calibris a occupé la majeure partie des six mois de travail effectué
 
 Je pourrais donc diviser l'ensemble du travail en trois grandes sections, le gestionnaire de création de questionnaires, la mise à jour vers Rails 4 et le portage d'une partie de l'interface sur mobile.
 
-\subsubsection{Gestionnaire de questionnaires}
+\subsection{Gestionnaire de questionnaires}
 
 Cette première partie s'est déroulée sur trois sprints (soit environ huit semaines, mes sprints s'étallant sur un peu plus de deux semaines) dont une étape préalable. 
 
@@ -475,7 +557,7 @@ Cette première partie s'est déroulée sur trois sprints (soit environ huit sem
 
 Cet ensemble de fonctionnalités étant liées au gestionnaire de questionnaire ont été finalisés au début du mois de mai.
 
-\subsubsection{Passage à Rails 4}
+\subsection{Passage à Rails 4}
 
 Le projet Calibris est une application ayant été écrite sur la version trois du framework Ruby On Rails. La seconde tâche majeure que j'aurais à effectuer sur celui-ci consistera à migrer l'ensemble du code-source vers la version quatre. Cette volonté de migrer les projets vers les versions récentes du framework fait partie de la politique globale de l'agence Inspire afin d'éviter à avoir à maintenir un ensemble hétéroclite de versions (du framework mais aussi des modules, ou Gems).
 
@@ -483,7 +565,7 @@ Une autre raison est venue pousser au portage de Calibris sur RoR 4. La tâche s
 
 Cette tâche s'est déroulée sur un seul et unique sprint (donc entre 2 et 3 semaines).
 
-\subsubsection{Interface de réponse sur mobile}
+\subsection{Interface de réponse sur mobile}
 
 Le projet Calibris possède deux grand rôles :
 \begin{itemize}
@@ -503,7 +585,110 @@ Plusieurs arguments sont venus appuyer cette décision :
 
 Initialement prévue sur deux semaines l'adaptation du code existant a finalement été plus facile que prévu et s'est déroulée en une seule semaine.
 
-\subsection{Rédaction d'un article sur la technologie Websocket}
+\subsection{Gestionnaire de questionnaires, ajouts}
+
+Suite à l'ajout de l'ensemble de ces fonctionnalités, plusieurs modifications substantielles ont été apportées au gestionnaire de questionnaire. Celles-ci étants particulièrement destinées à l'amélioration de l'édition des questions lors de la création d'un formulaire.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=.45]{img/editor.png}
+ \caption{Nouvelle interface d'édition des questions}
+ \label{fig.editor}
+\end{figure}
+
+Un nouvel attribut a été ajouté au modèle \texttt{Question}, nommé \texttt{weight} il permet de donner une importance plus ou moins grande afin de pouvoir pondérer les réponses lors de l'analyse de celles-ci.
+
+Afin d'ajouter ce nouvel élement un remaniement de l'interface était nécessaire. En effet le formulaire d'édition actuel ne laissait aucune place supplémentaire pour de nouvelles entrées.
+
+Une étape préliminaire a donc été créée et consistait à adapter ce formulaire pour le rendre extensible. Le résultat, visible sur la \cref{fig.editor} permet de bien distinguer les différents items du formulaire (ici le champ pour la question en elle même, le type et le poids).
+
+Suite à ça l'ajout du nouvel élément s'est fait suivant la méthodologie classique à tout projet Ruby on Rails.
+
+\begin{enumerate}
+  \item Ajout d'une Migration, pour annoncer un changement dans la base de donnée, ici une colonne \texttt{weight} contenant un nombre flottant (le poids étant compris entre 0.0 et 1.0) dans la table \texttt{questions}. Application de cette Migration pour mettre à jour la base de donnée.
+  \item Ajout de validations dans le modèle pour prendre en compte les particularités de ce nouvel attribut. Voir \cref{fig.weight_validation}.
+  
+  \begin{figure}[h]
+  \lstset{language=ruby}
+  \begin{lstlisting}
+validates :weight, numericality: { greater_than_or_equal_to: 0.0, less_than_or_equal_to: 1.0 }
+  \end{lstlisting}
+   \caption{Ajout de limites sur l'attribut \texttt{weight} du modèle Question}
+  \label{fig.weight_validation}
+  \end{figure}
+  \item Ajout et/ou modification des contrôlleurs et vues existantes pour prendre en compte le nouvel attribut.
+
+  \begin{figure}[h]
+  \lstset{language=ruby}
+  \begin{lstlisting}
+.input
+  = f.label :weight, t('questions.field.weight')
+  = f.text_field :weight, "data-rule-required" => true
+  \end{lstlisting}
+   \caption{Nouvel élément dans le formulaire d'édition}
+  \label{fig.weight_validation}
+  \end{figure}
+  
+\end{enumerate}
+
+\subsection{Correction et ajout des tests et ``Seeds''}
+
+Suite à l'ajout de toutes ces fonctionnalités deux étapes sont nécessaires afin de les intégrer correctement au reste du projet.
+
+Je devais tout d'abord m'assurer que toutes ces fonctionnalités étaient correctement testées. Pour plus d'informations sur cette partie voir la \cref{sec.tests}.
+
+Les ``seeds'' de l'application ont dû être en partie réécrits pour prendre en compte les changements effectués dans la structure (et plus particulièrement dans les modèles).
+
+  \begin{figure}[h]
+  \lstset{language=ruby}
+  \begin{lstlisting}
+p "creating respondents"
+25.times do |i|
+  @finished_respondent = Respondent.create(
+  email: "example@example.com",
+  name: "Finished respondent #{i+1}",
+  survey_id: @survey1.id
+  )
+end
+  \end{lstlisting}
+   \caption{Exemple de seed, génération de réponses aux questions des questionnaires}
+  \label{fig.seeds}
+  \end{figure}
+
+Les fichiers ``seeds'' d'une application Ruby on Rails prennent la forme de scripts Ruby et sont sensés remplir les tables de la base de donnée lors du premier lancement de l'application (création des rôles par défaut, des projets de bases…). Ils sont également un excelent moyen supplémentaire de tester la viabilité de la structure de donnée dans un environnement controllé (en plus des tests).
+
+Ces scripts sont placés dans le dossier \texttt{db/seeds/} et sont exécutés via la commande \\
+\texttt{rake db:seed}.
+
+Dans la \cref{fig.seeds} nous avons un extrait de l'un des ``seeds'' de Calibris permettant de créer 25 utilisateurs ayant répondu au questionnaire proposé. 
+
+Répartit sur la totalité du stage ces deux étapes ont pris, en temps cumulé, environ deux à trois semaines de développement.
+
+\subsection{Écriture de documentation}
+
+Afin d'informer l'équipe de certaines modifications effectuées sur Calibris j'ai également complété la documentation interne au projet et la générale s'appliquant à l'ensemble des membres de Inspire.
+
+J'ai pris soin d'expliquer mes changements sur la documentation de Calibris, ayant légèrement modifié les scripts de ``seeding'' et de création de base de donnée (afin de les adapters pour les différents clients du projet).
+
+Le Wiki officiel de l'agence a également été complété par certains liens pouvant être utiles à tous concernant de bonne méthodes d'organisation et de programmation sur le framework Ruby on Rails.
+
+Ruby on Rails réconseille toute écriture de documentation au sein du code source (à la manière de Doxygen) préférant le déclaration de méthodes et classes dites ``autodescriptives''. Le code source \cref{fig.autodesc} en est le témoin.
+
+  \begin{figure}[h]
+  \lstset{language=ruby}
+  \begin{lstlisting}
+def move_up
+  @category.move_left unless @category.questionnaire.published?
+  render nothing: true
+end 
+  \end{lstlisting}
+   \caption{Méthode ayant un code ``autodescriptif''}
+  \label{fig.autodesc}
+  \end{figure}
+  
+Une personne n'ayant jamais fait de Ruby on Rails comprend ici assez facilement le sens de cette méthode.
+
+\section{Rédaction d'un article sur la technologie Websocket}
 
 Suite à la réalisation de l'ensemble des tâches m'ayant été assignés sur Calibris j'ai décidé de participer à la rédaction d'un article sur le blog de l'agence. La technologie Websocket me tenant particulièrement à cœur je l'ai alors proposé aux membres de l'agence afin d'avoir leurs approbation avant de commencer la rédaction.
 
@@ -519,6 +704,7 @@ Au sein de ce chapitre je présenterai les différents projets sur lesquels j'ai
 
 \section{Calibris - Gestionnaire de questionnaire}
 
+\label{sec:calibris}
 Calibris est une application développée par Inspire servant à gestion et au remplissage de questionnaires auprès des membres d'une infrastructure.
 
 Suite au développement de cette application un accord est trouvé entre Inspire et le client Innergo\footnote{\url{http://www.innergo.nl/en/index.html}} afin de partager entre les deux entitées la propriété du code-source. Inspire est alors autorisée à continuer le développement sur l'application et de la revendre à d'autres entreprises.
@@ -633,7 +819,7 @@ end
  \label{fig.nestedrail}
 \end{figure}
 
-La \cref{fig.nestedrail} présente une action d'un controlleur de l'application Calibris exploitant la fonctionnalités \texttt{move\_to\_child\_of} offerte par la bibliothèque. Ici l'ensemble des modifications faites à la base de donnée est cachée et sont gérées intelligement par le \textit{gem}.
+La \cref{fig.nestedrail} présente une action d'un contrôleur de l'application Calibris exploitant la fonctionnalités \texttt{move\_to\_child\_of} offerte par la bibliothèque. Ici l'ensemble des modifications faites à la base de donnée est cachée et sont gérées intelligement par le \textit{gem}.
 
 \subsubsection{Utilisation des \texttt{remote}}
 
@@ -641,7 +827,7 @@ Un autre élément intéressant inhérant à Ruby On Rails et exploité à de mu
 
 Afin de bien comprendre l'utilité de cette fonctionnalité il faut tout d'abord détailler un peu le fonctionnement du Modèle-Vue-Controlleur au sein de Ruby On Rails.
 
-\paragraph{Le chargement d'une page} passe systématiquement par l'utilisation d'une route unique et prédéfinie dans la configuration de l'application. Nous allons ici prendre l'exemple du chargement de la page \textit{index} du controlleur \textit{QuestionnaireController}.
+\paragraph{Le chargement d'une page} passe systématiquement par l'utilisation d'une route unique et prédéfinie dans la configuration de l'application. Nous allons ici prendre l'exemple du chargement de la page \textit{index} du contrôleur \textit{QuestionnaireController}.
 
 Cette page possède comme rôle de lister l'ensemble des questionnaires actuellement présents dans la base de donnée de l'application. Elle est accessible par le chemin \texttt{questionnaires\_path}, chemin qui retourne une URL correspondant à l'adresse exacte de la page (dans notre cas il s'agit de \url{http://localhost:3000/questionnaires}).
 
@@ -650,7 +836,7 @@ Lorsque nous allons visiter cette URL (via un lien interne à l'application ou e
 \begin{enumerate}
   \item Il va tout d'abord interroger le Controlleur correspondant à l'URL interrogée, dans notre cas il s'agit de QuestionnaireController.
   \item Puis il va cherche l'action spécifique à exécuter au sein du Controlleur. Si aucune action n'est spécifiée (ce qui est ici le cas puisque rien n'a été précisé à la fin de l'URL) c'est l'action \texttt{index} qui est exécutée.
-  \item Le framework va alors exécuter la méthode \texttt{index} du controlleur, celle-ci s'occupera du rendu de la page \texttt{index.html}, laquelle sera renvoyée au navigateur.
+  \item Le framework va alors exécuter la méthode \texttt{index} du contrôleur, celle-ci s'occupera du rendu de la page \texttt{index.html}, laquelle sera renvoyée au navigateur.
 \end{enumerate}
 
 \paragraph{Dans certains cas} nous ne souhaitons pas générer une page XHTML classique mais plutôt exécuter du code Javascript afin d'effectuer une transformation particulière sur la page courante. Dans ce cas précis nous ne voulons pas appeler l'action (qui, rappelons le, correspond à une méthode du Controlleur) via le chargement d'une page mais plutôt de façon asynchrone via une requète Ajax\footnote{L'architecture informatique Ajax (acronyme d'Asynchronous JavaScript and XML) permet de construire des applications Web et des sites web dynamiques interactifs sur le poste client en se servant de différentes technologies ajoutées aux navigateurs web entre 1995 et 2005. \url{http://fr.wikipedia.org/wiki/Asynchronous_JavaScript_and_XML}}. 
@@ -829,11 +1015,11 @@ Dans notre cas nous avons spécialement recontré des erreurs de syntaxes amené
 
 \subsubsection{Strong Parameters}
 
-Rails 4 amène l'utilisation native des ``Strong Parameters'' dans l'implémentation de ses controlleurs. Cet outil applique un filtre sur les paramètres reçus depuis le navigateur pour ne laisser passer que ceux pouvant intéresser le controlleur en question.
+Rails 4 amène l'utilisation native des ``Strong Parameters'' dans l'implémentation de ses contrôleurs. Cet outil applique un filtre sur les paramètres reçus depuis le navigateur pour ne laisser passer que ceux pouvant intéresser le contrôleur en question.
 
-Celà s'implémente assez facilement, l'idée étant de ne plus accepter directement dans les actions du controlleur les tableaux de paramètres renvoyés par le navigateur mais de les passer auparavant dans une méthode intermédiaire faisant office de filtre.
+Celà s'implémente assez facilement, l'idée étant de ne plus accepter directement dans les actions du contrôleur les tableaux de paramètres renvoyés par le navigateur mais de les passer auparavant dans une méthode intermédiaire faisant office de filtre.
 
-Le principe a énormément été simplifié dans la dernière version. À chaque fois que nous manipulons les attributs d'un de nos modèles dans le controlleur nous ne passons non pas en paramètre le tableau d'attributs mais une méthode privée qui va retourner un tableau ``filtré'' ne contenant que les attributs dont la modification est autorisée.
+Le principe a énormément été simplifié dans la dernière version. À chaque fois que nous manipulons les attributs d'un de nos modèles dans le contrôleur nous ne passons non pas en paramètre le tableau d'attributs mais une méthode privée qui va retourner un tableau ``filtré'' ne contenant que les attributs dont la modification est autorisée.
 
     \begin{figure}[h]
     \lstset{language=ruby}
@@ -852,10 +1038,10 @@ def question_params
   params.require(:question).permit(:label, :kind)
 end
     \end{lstlisting}
-     \caption{Utilisation des Strong Parameters au sein du controlleur Question}
+     \caption{Utilisation des Strong Parameters au sein du contrôleur Question}
     \end{figure}
     
-Calibris utilisais déjà un Gem intégrant cette fonctionnalité dans les versions précédentes de Rails. La migration n'a donc pas été très difficile, le code source des controlleurs ayant déjà été formaté pour avant la mise à jour.
+Calibris utilisais déjà un Gem intégrant cette fonctionnalité dans les versions précédentes de Rails. La migration n'a donc pas été très difficile, le code source des contrôleurs ayant déjà été formaté pour avant la mise à jour.
     
 \subsubsection{Reste du code}
 
@@ -1014,7 +1200,7 @@ Ce chapitre sera l'occasion de revenir sur ces six mois. Je donnerai tout d'abor
 
 \section{Technique}
 
-Toujours dans un désir de repousser mes domaines de connaissances ces six mois de stage m'ont permis d'approfondir sérieusement ma compréhension du framework Ruby On Rails et des outils gravitant autour.
+Toujours dans un désir de repousser mes domaines de connaissances ces six mois de stage m'ont permis d'approfondir sérieusement ma compréhension du framework Ruby on Rails et des outils gravitant autour.
 
 L'idée ici n'était pas d'acquérir uniquement les compétences nécessaires pour faire de moi un développeur Rails mais également de comprendre les différentes structures de code et méthodes de développement utilisées au travers de ce framework. De ce fait j'ai pus intégrer de nombreux concepts tel que l'utilisation des vues partielles\footnote{\url{http://guides.rubyonrails.org/layouts_and_rendering.html}}, technique pouvant être réutilisée dans de nombreux autres projets (ce qui est le cas sur des frameworks PHP tel que Symfony\footnote{\url{http://symfony.com/legacy/doc/gentle-introduction/1_4/en/07-Inside-the-View-Layer}} ou Zend\footnote{\url{http://devzone.zend.com/1235/view-helpers-in-zend-framework/}}) ou plus simplement la structure de fichiers proposée par Rails, devenue de fait une organisation standard sur les grands frameworks Web.
 
@@ -1028,7 +1214,23 @@ Cela est d'autant plus vrais que dans le domaine de l'informatique, et plus spé
 
 Le sujet du stage consistait à approfondir mes connaissances sur les technologies front-end (concernant l'interface utilisateur) liées au framework Ruby On Rails. En effet n'ayant pas spécialement fait de développement de ce coté jusqu'alors je souhaitai profiter de cette opportunité pour parfaire mes connaissances dans ces domaines.
 
+Ces six mois on été riches en connaissance sur ce domaine. Je me suis fortement amélioré sur la compréhension et la structuration de mon code Javascript en partie en respectant les normes de codages imposées par Rails et en respectant les nouvelles directives proposées par Javascript dans les navigateurs (utilisation des sélecteurs CSS pour sélectionner les éléments, séparation stricte du HTML et du Javascript…).
+
+\subsection{Connaissances personnelles}
+
+Le domaine du Web n'ayant pas du tout été traité pendant mes cinqs ans d'études il a fallu que je sois proactif sur ce point et que je me forme moi même en parallèle des cours. Les stages ont également été un merveilleux moyen de confronter mes connaissances à la réalité en entreprise et d'apprendre en m'adaptant aux rêgles et techniques utilisées.
+
+Une très grande partie des connaissances et expériences que j'ai ainsi pu préciser sur mon CV sont liés à ces stages et aux projets web que j'ai effectué en parallèle à mes études.
+
+Ces six mois m'ont donc permis de bien me renforcer dans des domaines que je ne maitraisait pas totallement (frontend et certaines spécificités organisationnelles).
+
 \section{L'Équipe}
+
+Mon intégration au sein de l'équipe s'est fait sans grandes difficultés. Un des membres étant d'origine slovène ils étaient déjà habitués à parler en anglais. La langue n'a alors pas été une difficulté pendant ces six mois.
+
+Afin de ne pas déranger le travail en cours pendant les premières semaines j'ai été affecté à des tâches n'ayant pas une dépendance très fortes avec celles de l'équipe (correction, nettoyage et refactoring de code source). Ces travaux, pouvant le plus souvent être fait en parallèle m'ont permis de comprendre peu à peu les méthodes de travails utilisées.
+
+Puis peu à peu j'ai travaillé sur des tâches portant sur des modifications plus importantes (modification de contrôleurs et modèles). J'ai finalement corrigé des bugs et soucis architecturaux sérieux au boût de quelques semaines passées sur Calibris. 
 
 \listoffigures
 
