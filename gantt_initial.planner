@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20140303T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Travaill&#xE9;" description="Un jour de travail normal"/>
+      <day-type id="1" name="Ch&#xF4;m&#xE9;" description="Un jour ch&#xF4;m&#xE9; normal"/>
+      <day-type id="2" name="Utiliser la base" description="Utilise un jour du calendrier de base"/>
+    </day-types>
+    <calendar id="1" name="D&#xE9;faut">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Gestionnaire de questionnaire" note="" work="1872000" start="20140303T000000Z" end="20140530T170000Z" work-start="20140303T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="D&#xE9;couverte du projet" note="" work="288000" start="20140303T000000Z" end="20140314T170000Z" work-start="20140303T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="D&#xE9;veloppement" note="" work="1152000" start="20140314T170000Z" end="20140509T170000Z" work-start="20140317T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="4" name="Corrections et tests" note="" work="432000" start="20140509T170000Z" end="20140530T170000Z" work-start="20140512T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="3" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="5" name="Rails 4 upgrade" note="" work="1008000" start="20140602T000000Z" end="20140718T170000Z" work-start="20140602T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20140602T000000Z"/>
+      <task id="6" name="Analyse du travail &#xE0; faire" note="" work="432000" start="20140602T000000Z" end="20140620T170000Z" work-start="20140602T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20140602T000000Z"/>
+      </task>
+      <task id="7" name="Mise &#xE0; jour et corrections" note="" work="432000" start="20140620T170000Z" end="20140711T170000Z" work-start="20140623T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="8" name="Tests" note="" work="144000" start="20140711T170000Z" end="20140718T170000Z" work-start="20140714T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="7" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="9" name="Version Mobile" note="" work="720000" start="20140721T000000Z" end="20140829T170000Z" work-start="20140721T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="10" name="Adaptation de l'interface" note="" work="432000" start="20140721T000000Z" end="20140808T170000Z" work-start="20140721T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20140721T000000Z"/>
+      </task>
+      <task id="11" name="Corrections" note="" work="288000" start="20140818T000000Z" end="20140829T170000Z" work-start="20140818T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20140818T000000Z"/>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
