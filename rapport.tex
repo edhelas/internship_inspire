@@ -135,7 +135,7 @@
 \clearpage
 \vspace*{\stretch{1}}
     \section*{Résumé}
-  Inspire est une entreprise se spécialisant dans le développement de sites web en utilisant le framework Ruby on Rails. Elle est localisée à Utrecht aux Pays-Bas.
+  Inspire est une entreprise se spécialisant dans le développement de sites Web en utilisant le framework Ruby on Rails. Elle est localisée à Utrecht aux Pays-Bas.
   
   L'objectif de ces six mois de stage a été de conforter les connaissances acquises l'été dernier concernant ce framework ainsi que les différentes technologies liées à l'environnement Web tel que Javascript, CSS ou HTML.
 
@@ -619,8 +619,8 @@ Cette tâche s'est déroulée sur un seul et unique sprint (donc entre 2 et 3 se
 
 Le projet Calibris possède deux grand rôles :
 \begin{itemize}
-  \item Il permet tout d'abord aux administrateurs de gérer des questionnaires, des entités (associations, entreprises), des utilisateurs et des sondages ou enquêtes via une unique interface web.
-  \item Il permet également l'envoi d'invitations (par email) aux utilisateurs afin que ceux-ci répondent aux questionnaires grâce à l'interface adaptée.  
+  \item Il permet tout d'abord aux administrateurs de gérer des questionnaires, des entités (associations, entreprises), des utilisateurs et des sondages ou enquêtes via une unique interface Web.
+  \item Il permet également l'envoi d'invitations (par courriel) aux utilisateurs afin que ceux-ci répondent aux questionnaires grâce à l'interface adaptée.  
 \end{itemize}
 
 Le but de cette tâche a donc été de porter la seconde partie de cette application sur les plateformes mobiles afin d'améliorer l'accessibilité aux utilisateurs souhaitant remplir le questionnaire rapidement sans avoir un accès direct à un ordinateur portable ou fixe.
@@ -828,7 +828,7 @@ Après avoir créé et publié un questionnaire, en tant que coordinateur et au 
 
 Un formulaire est alors chargé me permettant de préciser quel questionnaire je souhaite utiliser, à quelles adresses courriel je souhaite l'envoyer ainsi que quelques autres précisions sur le comportement de l'analyse (Quand celle-ci doit commencer ? Doit-elle se clore après une certaine date ?…) et la forme à donner à l'invitation pour les questionnés (phrase d'invitation, logo…).
 
-Je lance alors l'analyse, Calibris envoie les invitations aux emails listés et je visualise en temps réel l'état des résultats. Suivant la comportement j'ai précisé l'analyse se clôt lorsque le dernier questionné répond ou après une date fixée.
+Je lance alors l'analyse, Calibris envoie les invitations aux courriels listés et je visualise en temps réel l'état des résultats. Suivant la comportement j'ai précisé l'analyse se clôt lorsque le dernier questionné répond ou après une date fixée.
 
 Je peux alors télécharger un rapport au format PDF contenant l'ensemble des informations de l'analyse.
 
@@ -905,7 +905,7 @@ Comme vu dans le chapitre précédent, un questionnaire possède trois niveaux d
 
 Suite à l'implémentation des première fonctionnalités il est apparu que la structure offerte par défaut pour la liaison des différents modèles de données au sein de Ruby on Rails ne permettait pas d'assurer cette notion d'ordre. De plus la réorganisation de l'ordre des éléments serait source d'une importante activité au niveau de la base de données afin de correctement mettre à jour les positions de tous les éléments.
 
-Afin de remédier à ce problème l'équipe a décidée d'utiliser un \textit{gem} exploitant la structure des imbrications d'ensembles\footnote{En informatique, l'imbrication d'ensembles, nested sets en anglais, est une technique pour représenter des données hiérarchisées dans une base de données relationnelle. En substance, elle consiste à attribuer à chaque nœud deux bornes, dites gauche et droite, qui permettent de statuer sur les liens de parenté entre les différents nœuds. Source \url{http://fr.wikipedia.org/wiki/Imbrication_d'ensembles}}
+Afin de remédier à ce problème l'équipe a décidée d'utiliser un \textit{gem} exploitant la structure des imbrications d'ensembles\footnote{En informatique, l'imbrication d'ensembles, \textit{nested sets} en anglais, est une technique pour représenter des données hiérarchisées dans une base de données relationnelle. En substance, elle consiste à attribuer à chaque nœud deux bornes, dites gauche et droite, qui permettent de statuer sur les liens de parenté entre les différents nœuds. Source \url{http://fr.wikipedia.org/wiki/Imbrication_d'ensembles}}
 
 \begin{figure}[htp]
 \centering
@@ -1102,7 +1102,7 @@ L'utilisation des tests pour couvrir notre code permet dans notre cas de détect
 
 La mise à jour d'un projet vers une nouvelle version se déroule généralement en trois temps :
 \begin{itemize}
-  \item Tout d'abord mettre à jour le numéro de version des libraries et Gem utilisées par le projet puis utiliser \texttt{bundle} pour appliquer ces modifications.
+  \item Tout d'abord mettre à jour le numéro de version des bibliothèques et Gem utilisées par le projet puis utiliser \texttt{bundle} pour appliquer ces modifications.
   \item Corriger une à une toutes les erreurs rencontrées afin de stabiliser et porter progressivement l'application sur la nouvelle base applicative.
   \item Exécuter la suite de tests afin de détecter toutes les régressions introduites et les corriger une à une.
 \end{itemize}
@@ -1283,11 +1283,11 @@ Elle peuvent être définies sur deux niveaux :
 
 Une fois les media-queries mises en places il ne nous reste plus qu'à définir le comportement de nos éléments sur notre page affichée sur mobile.
 
-Quelques règles sont généralement suivies afin d'adapter efficacement les pages web :
+Quelques règles sont généralement suivies afin d'adapter efficacement les pages Web :
 \begin{itemize}
   \item La taille des polices est légèrement augmentée afin d'en faciliter la lecture.
   \item D'une façon plus générale c'est toute l'interface qui va être grossie, en grande partie pour faciliter la navigation (taille des boutons des menus). Le sélecteur devenant bien souvent le doigt de l'usager et non plus le curseur de la souris.
-  \item Certaines réorganisations de contenu sont également à prévoir afin de faciliter l'exploration des divers éléments du site web (remplacement de listes simples par des listes déroulantes, séparation de textes longs en onglets).
+  \item Certaines réorganisations de contenu sont également à prévoir afin de faciliter l'exploration des divers éléments du site Web (remplacement de listes simples par des listes déroulantes, séparation de textes longs en onglets).
 \end{itemize}
 
 Pour le cas de Calibris ce sont essentiellement les deux premiers facteurs qui ont été mis en place. Ainsi la taille du texte des titres et des questions affichés ont été adaptés.
@@ -1301,9 +1301,9 @@ Avec l'arrivée des écrans dits ``à haute définition'' sur les mobiles nous c
 La \cref{fig.resolution} illustre parfaitement les soucis que nous pouvons avoir avec le rendu des images sur les écrans haute résolution. 
 
 \begin{itemize}
-  \item La première illustre l'affichage d'un icone de 8 par 8 pixels sur un écran basse résolution. Il est ici parfaitement affiché, les pixels de l'image s'alignant parfaitement sur ceux de l'écran.
-  \item Sur la seconde image nous tentons d'afficher le même icone sur un écran haute résolution, nous voyons que les pixels agrandis de l'image d'origine chevauchent ceux de l'écran. Le navigateur va alors tenter d'interpoler ceux-ci créant un effet de flou lors du rendu.
-  \item Sur la dernière image, nous chargeons la version vectorielle de l'icone, le navigateur va alors générer une image ayant la résolution native de l'écran.
+  \item La première illustre l'affichage d'un icône de 8 par 8 pixels sur un écran basse résolution. Il est ici parfaitement affiché, les pixels de l'image s'alignant parfaitement sur ceux de l'écran.
+  \item Sur la seconde image nous tentons d'afficher le même icône sur un écran haute résolution, nous voyons que les pixels agrandis de l'image d'origine chevauchent ceux de l'écran. Le navigateur va alors tenter d'interpoler ceux-ci créant un effet de flou lors du rendu.
+  \item Sur la dernière image, nous chargeons la version vectorielle de l'icône, le navigateur va alors générer une image ayant la résolution native de l'écran.
 \end{itemize}
 
 \begin{figure}[htp]
@@ -1313,7 +1313,7 @@ La \cref{fig.resolution} illustre parfaitement les soucis que nous pouvons avoir
  \label{fig.resolution}
 \end{figure}
 
-Pour les images, nous rencontrons le même soucis. Contrairement aux textes, les images ont toujours tendance à s'afficher en suivant la résolution réelle de l'écran (un pixel de l'image équivalent à un pixel réel). Pourtant il arrive bien souvent aux développeurs de fixer leurs tailles afin de s'assurer de leurs bon placement dans la page. Lors du passage sur mobile, la résolution étant beaucoup plus dense, leur rendu s'en trouve chamboulé (une icone de 16 pixels sera affiché sur une largeur de 50 pixels réels par exemple) générant un flou désagréable lors du rendu de la page.
+Pour les images, nous rencontrons le même soucis. Contrairement aux textes, les images ont toujours tendance à s'afficher en suivant la résolution réelle de l'écran (un pixel de l'image équivalent à un pixel réel). Pourtant il arrive bien souvent aux développeurs de fixer leurs tailles afin de s'assurer de leurs bon placement dans la page. Lors du passage sur mobile, la résolution étant beaucoup plus dense, leur rendu s'en trouve chamboulé (une icône de 16 pixels sera affiché sur une largeur de 50 pixels réels par exemple) générant un flou désagréable lors du rendu de la page.
 
 Ici deux solutions peuvent être envisagées :
 \begin{itemize}
@@ -1422,7 +1422,7 @@ Réparti sur la totalité du stage ces deux étapes ont pris, en temps cumulé, 
 
 \section*{Conclusion}
 
-Travailler sur Calibris a été pour moi riche en expériences tant sur le plan technique qu'organisationnel. J'ai, en effet, pu balayer de très nombreux domaines relatifs au développement web. 
+Travailler sur Calibris a été pour moi riche en expériences tant sur le plan technique qu'organisationnel. J'ai, en effet, pu balayer de très nombreux domaines relatifs au développement Web. 
 
 Le travail sur \texttt{awesomenestedset} étant très proche du modèle de données de l'application j'ai ainsi mieux compris le fonctionnement de ActiveRecord ce qui m'a permis d'optimiser le nombre de requêtes faites en base de données lors de la réorganisation des éléments des questionnaires.
 Puis en utilisant la propriété \texttt{remote} des vues j'ai affiché et mis à jour ces informations via le navigateur de l'utilisateur.
@@ -1456,7 +1456,7 @@ Ces six mois on été riches en connaissances en cette matière. Je me suis fort
 
 Le domaine du Web n'ayant pas du tout été traité pendant mes cinq ans d'études il a fallu que je sois proactif sur ce point et que je me forme moi même en parallèle des cours. Les stages ont également été un merveilleux moyen de confronter mes connaissances à la réalité en entreprise et d'apprendre en m'adaptant aux règles et techniques utilisées.
 
-Une très grande partie des connaissances et expériences que j'ai ainsi pu préciser sur mon CV sont liées à ces stages et aux projets web que j'ai effectués en parallèle à mes études.
+Une très grande partie des connaissances et expériences que j'ai ainsi pu préciser sur mon CV sont liées à ces stages et aux projets Web que j'ai effectués en parallèle à mes études.
 
 Ces six mois m'ont donc permis de bien me renforcer dans des domaines que je ne maîtrisais pas totalement (frontend et certaines spécificités organisationnelles).
 
