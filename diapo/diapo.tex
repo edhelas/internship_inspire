@@ -12,10 +12,23 @@
 \usepackage{pdfpages}
 \usetheme{Warsaw}
 
-\subtitle{Développement Web sur le framework Ruby on Rails}
-\title{Soutenance Finale}
-\author{Jaussoin Timothée \\ \and Maître de Stage Floris Vlasveld \\ \and Enseignant Responsable Normand Nicolas}
-\institute{Polytech Nantes - Département Informatique}
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm]{section in head/foot}%
+  \insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}%
+    \usebeamerfont{author in head/foot}
+  \insertshorttitle\hfill\insertpagenumber/ \inserttotalframenumber
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\subtitle{Development on the Ruby on Rails framework}
+\title{Final presentation}
+\author{Jaussoin Timothée}
+\institute{Internship Master Floris Vlasveld \\ Head teacher Normand Nicolas \\ Polytech Nantes - IT Department}
 
 \begin{document}
 \begin{frame}
@@ -40,7 +53,7 @@
   \begin{block}{Project}
     \begin{itemize}
       \item Calibris - Questionnaire Manager
-      \item Add new features, refactor and optimize the source-code
+      \item Add new features, refactor and optimize the sourcecode
     \end{itemize}
   \end{block}
 \end{frame}
@@ -57,13 +70,13 @@
   \begin{itemize}
     \item Located in Utrecht, The Netherlands
     \item Created in 2011
-    \item Projects developped on the Ruby on Rails framework
-    \item Working with parts of the Agile methods
+    \item Projects developed on the Ruby on Rails framework
+    \item Working with parts of the Agiles methods
   \end{itemize}
   
   \begin{block}{Team}
     \begin{itemize}
-      \item 4 developpers
+      \item 4 developers
       \item 2 managers
       \item … and some freelancers
     \end{itemize}
@@ -88,7 +101,7 @@
   
   \begin{block}{Technical part}
     \begin{itemize}
-      \item Helping on frontend optimisations (Javascript, HTML5)… and backend (database side)
+      \item Helping on frontend optimizations (Javascript, HTML5)… and backend (database side)
       \item Giving a fresh view on some issues (with my experience)
     \end{itemize}
   \end{block}
@@ -145,7 +158,7 @@
   \begin{block}{Cucumber}
   	Unit test system
     \begin{itemize}
-      \item Define the "user behaviour"
+      \item Define the ``user behaviour"
       \item Frontend navigation (forms, links…)
     \end{itemize}
   \end{block}
@@ -163,7 +176,7 @@
 
   \begin{itemize}
     \item General overview using the ``Scrum board''
-    \item Detailled overview on Jira
+    \item Detailed overview on Jira
   \end{itemize}
   
 \end{frame}
@@ -194,21 +207,21 @@
 
 \section{Planning}
 
-\begin{frame}{Planning -- Gantt Initial}
+\begin{frame}{Planning -- First Gantt}
 
 \begin{landscape}
 \begin{figure}[htp] \centering{
-	\includegraphics[scale=0.38, angle=270]{../gantt_initial.pdf}}
+	\includegraphics[scale=0.50, angle=270, trim=90 60 0 0]{../gantt_initial.pdf}}
 \end{figure}
 \end{landscape}
 
 \end{frame}
 
-\begin{frame}{Planning -- Gantt Final}
+\begin{frame}{Planning -- Final Gantt}
 
 \begin{landscape}
 \begin{figure}[htp] \centering{
-	\includegraphics[scale=0.38, angle=270]{../gantt_final.pdf}}
+	\includegraphics[scale=0.48, angle=270, trim=90 60 0 0]{../gantt_final.pdf}}
 \end{figure}
 \end{landscape}
 
@@ -267,7 +280,7 @@
   \begin{figure}[htp]
   \centering
   \includegraphics[scale=0.4]{../img/calibris2.png}
-   \caption{Aswering a questionnaire on Calibris}
+   \caption{Answering a questionnaire on Calibris}
    \label{fig.calibris2}
   \end{figure}
 \end{frame}
@@ -301,7 +314,7 @@
       \item Implement basic CRUD (Create, Read, Update and Delete) actions 
       \item Add inline editing
       \item Add drag\&drop reordering 
-      \item Link it with the all application
+      \item Link it with the whole application
     \end{itemize}
   \end{block}
   
@@ -315,9 +328,9 @@
 
 \begin{frame}{Questionnaire Manager - Implementation}
   \begin{itemize}
-    \item Using \texttt{awesome\_nested\_set} to handle the questionnaires structures
-    \item Using the Rails \texttt{remotes} to send and receive dynamicaly parts of the page
-    \item Using jQuery sortable to reorder dynamicaly the categories, clusters and questions
+    \item Using \texttt{awesome\_nested\_set} to handle the questionnaires structure
+    \item Using the Rails \texttt{remotes} to dynamically send and receive parts of the page
+    \item Using jQuery sortable to dynamically reorder the categories, clusters and questions
   \end{itemize}
   
   \begin{figure}[htp]
@@ -333,9 +346,9 @@
   \begin{block}{To Do}
     \begin{enumerate}
       \item Update the Gemfile
-      \item Fixing the critical bugs
-      \item Running the test suite
-      \item Fixing the remaining bugs
+      \item Fix the critical bugs
+      \item Run the test suite
+      \item Fix the remaining bugs
     \end{enumerate}
   \end{block}
   
@@ -362,7 +375,7 @@
   
   \begin{block}{}
     \begin{itemize}
-      \item 1 weeks + 2 more weeks for remaining issues
+      \item 1 week + 2 more weeks for remaining issues
       \item Merged in the trunk
     \end{itemize}
   \end{block}
@@ -413,7 +426,7 @@
   \begin{block}{To Do}
     \begin{itemize}
       \item Adding new RSpec and Cucumber tests to cover the code
-      \item Fix and rewrite the ``seeds'' to fill properly the database
+      \item Fix and rewrite the ``seeds'' to properly fill the database
     \end{itemize}
   \end{block}
   
@@ -433,7 +446,7 @@
   \begin{block}{Technical part}
     \begin{itemize}
       \item Strengthening my knowledge in Rails… but also in general Web development (concepts…)
-      \item I do not want to be specialized in one technologie yet
+      \item I do not want to be specialized in one technology yet
     \end{itemize}
   \end{block}
   
@@ -469,7 +482,7 @@
         \item Internships
       \end{itemize}
       
-      \item … to complete some significants gaps
+      \item … to complete some significant gaps
       \begin{itemize}
         \item Code management, bug tracker
         \item Architectural decisions 
@@ -496,7 +509,7 @@
   \begin{itemize}
     \item Calibris, a full stack Rails project 
     \item Daily improvements and fixes
-    \item Take part of a team
+    \item Take part in a team
     \item Blog post
   \end{itemize}
 \end{frame}
